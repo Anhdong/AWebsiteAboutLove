@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    height: 80vh; /* Takes up 100% of the viewport height */
+    display: flex;
+    flex-direction: column; /* Stacks H1 and Buttons vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center;    /* Centers horizontally */
+    background-color: #f0f0f0; /* Optional: just to see the bounds */
+    overflow: hidden; /* Prevents scrollbars when buttons jump */
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'Sour Gummy';
+}
+
+button{
+    position: absolute;
+    width: 4em;
+    height: 3em;
+
+    /*border*/
+    border-width: 0px;
+    box-shadow:  grey 1px 1px 5px;
+    border-radius: 10px;
+    /*text*/
+    font-size: 2em;
+    font-weight: 'Sour Gummy';
+    font-weight: 900;
+
+
+    cursor: pointer;
+    margin: auto;
+
+    text-align: center;
+}
+
+#accept_button{
+    background-color: green;
+
+    left:15em;
+
+
+}
+
+#deny_button{
+    background-color: red;
+
+    right: 15em;
+    
+    transition: all 0.05s ease;
+}
